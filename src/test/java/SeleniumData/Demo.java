@@ -28,6 +28,7 @@ public class Demo extends BaseTest {
 //		landingPage.goTo();
 		landingPage.LoginApplication(input.get("email"), input.get("pwd"));
 		Assert.assertEquals("Incorrect email and  password",landingPage.getErrorMsg() );
+		System.out.println("Sameer");
 		ProductCatalog productCatalog = new ProductCatalog(driver);
 		List<WebElement> products = productCatalog.getProductLists();
 		productCatalog.addProductToCart(productName);
