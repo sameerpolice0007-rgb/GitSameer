@@ -27,6 +27,7 @@ public class Demo2 {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
 		List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));
+		System.out.println("Sameer");
 	
 
 		WebElement prod = products.stream().filter(product->product.findElement(By.cssSelector("b")).getText().equals("ZARA COAT 3")).findFirst().orElse(null);

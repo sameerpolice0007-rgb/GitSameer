@@ -29,6 +29,7 @@ public class ErrorVal extends BaseTest {
 //		ProductCatalog productCatalog = new ProductCatalog(driver);
 //		List<WebElement> products = productCatalog.getProductLists();
 //		productCatalog.addProductToCart(productName);
+		System.out.println("Sameer");
 
 		
 	    
